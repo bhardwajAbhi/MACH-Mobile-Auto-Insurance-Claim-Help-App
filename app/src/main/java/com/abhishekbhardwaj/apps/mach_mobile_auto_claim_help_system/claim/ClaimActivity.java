@@ -263,7 +263,7 @@ public class ClaimActivity extends AppCompatActivity implements OnMapReadyCallba
         Log.d("imagePathList", imagePathList.toString());
 
         Intent sendMail = new Intent(Intent.ACTION_SEND);
-        sendMail.putExtra(Intent.EXTRA_EMAIL, new String[] {"abhishekbhardwaj090@gmail.com", "ashishchoudhary956@gmail.com"});
+        sendMail.putExtra(Intent.EXTRA_EMAIL, new String[] {"abhishekbhardwaj090@gmail.com", "imabhibhardwj@gmail.com"});
         sendMail.putExtra(Intent.EXTRA_SUBJECT, "Claim Report from user - " + user.getEmail());
         sendMail.putExtra(Intent.EXTRA_TEXT, message);
 
