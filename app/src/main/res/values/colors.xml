@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9900</color>
+    <color name="colorPrimaryDark">#747474</color>
+    <color name="colorAccent">#ff9900</color>
+    <color name="colorText2">#000000</color>
+    <color name="colorText3">#90000000</color>
+
+    <color name="colorText">#ffffff</color>
+
+
+    <color name="checkbox_active">#6e6e6e</color>
+    <color name="checkbox_inactive">#ff9900</color>
+</resources>

@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#747474"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userProfileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_profile_image"
+                />
+
+            <TextView
+                android:id="@+id/textviewuserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:text=""
+                android:hint="userName"
+                android:textColor="@color/colorText"/>
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--Basic Details-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/colorText"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="Basic Details"
+                        android:textAlignment="center"
+                        android:textColor="#1c447c"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                    <!--name-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Name:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/customerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="customer's name"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--email-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="E-mail:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/customerEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="customer's email"
+                            android:padding="2dp"
+                            android:singleLine="false"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--phone-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Phone:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/customerPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="customer's phone"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Address-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Address:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/customerAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="customer's address"
+                            android:padding="2dp"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Vehicle Details-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/colorText"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="Vehicle Details"
+                        android:textAlignment="center"
+                        android:textColor="#1c447c"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--make-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Make:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleCompany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="company name"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Model-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Model:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleModel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="Vehicle Model"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Sub Model-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Sub-Model:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleSubmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="sub model"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Cubic Capacity-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Cubic Capacity:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/VehicleCubicCapacity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="cc"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Manufacturing Year-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Mfg Year:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/VehicleMfg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="Manufacturing Year"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Seating Capacity-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Seating Capacity:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleSeating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="capacity"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Body Type-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Body Type:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleBody"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="body type"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Registration Capacity-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Registration No:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleRegistrationNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="registration number"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--RTO-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="RTO:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleRto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="Road Transport Office"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Fuel Type-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Fuel Type:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleFuel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="fuel type"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Chassis No-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Chassis No:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/vehicleChassis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="chassis number"
+                            android:padding="2dp"
+                            android:singleLine="false"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Engine No-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Engine No:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/VehicleEngine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="engine number"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Insurance Details-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/colorText"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="Insurance Details"
+                        android:textAlignment="center"
+                        android:textColor="#1c447c"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                    <!--Policy No-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Policy No:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/insurancePolicyNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="policy number"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Proposal No-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Proposal No:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/insuranceProposalNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="proposal number"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Proposal date-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Proposal Date:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/insuranceProposalDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="proposal date"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Policy Issued On-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Issued On:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/insurancePolicyIssuedOn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="policy issued on"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Policy Period-->
+                    <LinearLayout
+                        android:id="@+id/insurancePolicyPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Policy Period:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/insurancePeriod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="period of insurance"
+                            android:padding="2dp"
+                            android:singleLine="false"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Insured Name-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Insured Name:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/insuredName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="insured name"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--Insured Address-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Insured Add:"
+                            android:textColor="@color/colorText2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/insuredAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:hint="insured address"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--More Details-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/insuranceButtonMore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/transparent"
+                            android:padding="2dp"
+                            android:text="More Details"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--Insurance Company Details-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/colorText"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="Insurance Company"
+                        android:textAlignment="center"
+                        android:textColor="#1c447c"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <!--company name-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="ABC General Insurance Co. Ltd"
+                        android:textAlignment="center"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText3"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <!--company address-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/company_add"
+                        android:textAlignment="center"
+                        android:padding="2dp"
+                        android:textColor="@color/colorText3"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!--company contact number-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Contact Numbers"
+                        android:textAlignment="center"
+                        android:padding="2dp"
+                        android:textColor="@color/colorText3"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="4567893652"
+                            android:textColor="@color/colorText3"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="7826892315"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText3"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/buttonSignOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="#B57617"
+                android:text="LOG OUT"
+                android:textColor="@color/colorText"
+                android:textSize="24sp"
+                android:padding="5dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+</LinearLayout>

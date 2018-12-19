@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".claim.ClaimActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <!-- Heading Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="Report Incident"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+        <!-- General Instructions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/claim_instruction"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+        <!-- Drive car card -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/colorText"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Can you drive your Car?"
+                    android:textColor="#df0a0a"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/claim_toggle_switch"
+                    android:layout_marginEnd="10dp"
+                    android:textOff=""
+                    android:textOn=""/>
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- location card -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/colorText"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Incident Location"
+                    android:textAlignment="center"
+                    android:textColor="#dc0d13"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/claim_MapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="5dp">
+
+                </com.google.android.gms.maps.MapView>
+
+                <Button
+                    android:id="@+id/Btn_useCurrentLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorAccent"
+                    android:clickable="true"
+                    android:text="Use My Current Location"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp"
+                    android:elevation="5dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- damage card -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/colorText"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:text="Damage"
+                    android:textAlignment="center"
+                    android:textColor="#dc0d13"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/damage_car" />
+
+                    <CheckBox
+                        android:id="@+id/car_rearWindow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:padding="2dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_right_headlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="62dp"
+                        android:button="@drawable/checkbox_background"/>
+
+                    <CheckBox
+                        android:id="@+id/car_left_bumper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginTop="45dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_front_right_door"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="47dp"
+                        android:button="@drawable/checkbox_background"/>
+
+                    <CheckBox
+                        android:id="@+id/car_right_bumper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/car_left_bumper"
+                        android:layout_alignTop="@+id/car_front_right_door"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_right_rear_door"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/car_left_rear_door"
+                        android:layout_below="@+id/car_front_right_door"
+                        android:layout_marginTop="-77dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_left_front_door"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/car_left_bumper"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="-76dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_left_rear_door"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/car_left_bumper"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="-76dp"
+                        android:layout_marginStart="61dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_left_back_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/car_left_headlight"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="-94dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_right_back_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/car_right_headlight"
+                        android:layout_marginTop="-94dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_roof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="123dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_hood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="47dp"
+                        android:button="@drawable/checkbox_background" />
+
+                    <CheckBox
+                        android:id="@+id/car_left_headlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="61dp"
+                        android:button="@drawable/checkbox_background" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/damage_instruction"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- camera card -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/colorText"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:text="Take Photos"
+                    android:textAlignment="center"
+                    android:textColor="#dc0d13"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/photo_instruction"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:numColumns="3"
+                    android:id="@+id/main_grid_view">
+                </GridView>
+
+                <Button
+                    android:id="@+id/addPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="5dp"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp"
+                    android:text="Add Photo"/>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+          android:id="@+id/btnRequestClaim"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="25dp"
+          android:background="#06bf1c"
+          android:text="Request Claim"
+          android:textAllCaps="false"
+          android:textColor="@color/colorText"
+          android:textSize="24sp"
+          android:padding="5dp"
+
+          />
+
+    </LinearLayout>
+
+</ScrollView>

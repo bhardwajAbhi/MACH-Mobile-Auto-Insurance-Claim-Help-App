@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">MACH</string>
+  <string name="title_activity_maps">Map</string>
+  <string name="mach">Mobile Auto-Insurance\nClaim &amp; Help App</string>
+  <string name="company_add">One India Bulls Centre, Tower-1, 14th Floor, Jupiter Mill Compound, Mumbai-400 013, IRDA License No- ABIBL-146/03</string>
+  <string name="claim_instruction">Before you report an incident please ensure that all parties involved are safe. If someone is injured you should call the emergency services first.\n\nUse the options below to record as much information as possible.</string>
+  <string name="damage_instruction">Highlight the damaged areas by tapping on the diagram\'s impact spots above</string>
+  <string name="photo_instruction">Add photos of the incident from your device\'s photo gallery, or take new photos.</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "213457866354",
+    "firebase_url": "https://machapp-9c3e0.firebaseio.com",
+    "project_id": "machapp-9c3e0",
+    "storage_bucket": "machapp-9c3e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213457866354:android:5ceb15a55c039e12",
+        "android_client_info": {
+          "package_name": "com.abhishekbhardwaj.apps.mach_mobile_auto_claim_help_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213457866354-jb2l9stdjgobmdqmgdkq8h1n9c5e8dep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abhishekbhardwaj.apps.mach_mobile_auto_claim_help_system",
+            "certificate_hash": "71a57d1584f68430411c03c2dfc170fa60fb744b"
+          }
+        },
+        {
+          "client_id": "213457866354-qb3vk856i6rul7g2uv65nqu3rbvlokaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhL-w81bdhWbZT5B_2H6gqyqjRpwyDPEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213457866354-qb3vk856i6rul7g2uv65nqu3rbvlokaf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

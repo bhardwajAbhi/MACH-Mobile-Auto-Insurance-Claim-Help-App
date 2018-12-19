@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nearby_hospital"
+        android:icon="@drawable/hospital"
+        android:title="Hospitals"
+        />
+
+    <item
+        android:id="@+id/nearby_fire"
+        android:icon="@drawable/fire"
+        android:title="Fire Stations"
+        />
+
+    <item
+        android:id="@+id/nearby_gas"
+        android:icon="@drawable/gas_pump"
+        android:title="Petrol Pumps"
+        />
+
+    <item
+        android:id="@+id/nearby_car"
+        android:icon="@drawable/car_repair"
+        android:title="Car Repair"
+        />
+
+
+</menu>

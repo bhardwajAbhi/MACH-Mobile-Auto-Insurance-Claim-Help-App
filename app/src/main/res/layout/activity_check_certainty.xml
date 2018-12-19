@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="300dp"
+  android:layout_margin="8dp"
+  tools:context=".tracking.CheckCertainty"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+    <ImageView
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:padding="5dp"
+      android:background="@drawable/icon_alert"/>
+
+    <TextView
+      android:id="@+id/textView6"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:fontFamily="@font/russo_one"
+      android:text="ALERT!!"
+      android:textColor="#758A75"
+      android:textSize="20sp"/>
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/darker_gray"/>
+
+  <TextView
+    android:id="@+id/textView4"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="5dp"
+    android:fontFamily="@font/oxygen"
+    android:text="Accident Detection Service has \n detected a Crash"
+    android:textAlignment="center"
+    android:textColor="#444848"
+    android:textSize="18sp"/>
+
+  <TextView
+    android:id="@+id/textView5"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="1dp"
+    android:fontFamily="@font/russo_one"
+    android:text="Did an Accident Occour?"
+    android:textAlignment="center"
+    android:textColor="#B0201C"
+    android:textSize="24sp"/>
+
+  <TextView
+    android:id="@+id/countDown"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:fontFamily="@font/oxygen"
+    android:text="seconds remaining"
+    android:textAlignment="center"
+    android:textColor="#444848"
+    android:textSize="18sp"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp">
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+    <Button
+      android:id="@+id/buttonYes"
+      android:layout_width="110dp"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:elevation="5dp"
+      android:text="YES"
+      android:textStyle="bold"
+      android:textSize="22sp"
+      android:textColor="@color/colorText"
+      />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+
+    <Button
+      android:id="@+id/buttonNo"
+      android:layout_width="110dp"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:elevation="5dp"
+      android:text="NO"
+      android:textStyle="bold"
+      android:textSize="22sp"
+      android:textColor="@color/colorText"
+      />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+  </LinearLayout>
+
+
+</LinearLayout>
