@@ -1,0 +1,2 @@
+# MACH-Mobile-Auto-Insurance-Claim-Help-App
+This android application uses the internal sensors of an android device to detect vehicle crashes in real time and send an emergency message with the victim's current location to his pre-selected emergency contacts. This also allows to claim the vehicle insurance on the go making the process instant along with providing information about nearby hospitals, fire stations etc.
