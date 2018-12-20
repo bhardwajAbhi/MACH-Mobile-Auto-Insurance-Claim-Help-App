@@ -4,3 +4,6 @@ The application "MACH: Mobile Auto-Insurance Claim & Help System" describes the 
 When in an emergency every second matters. That's why this application allows one to check nearby hospitals and other road side assistance like Fuel stations, Fire stations etc., with a single click, and even show the navigation route.
 
 This application also provides the facility to report an incident on the go so if the unexpected does happen, the app is here to help people. After making a claim, a dedicated Claim's Manager will liaise with one's motor insurer, and third parties, and the approved repairer on one's behalf.
+
+
+Following are some screenshots of the application implemented on smartphone side: 
