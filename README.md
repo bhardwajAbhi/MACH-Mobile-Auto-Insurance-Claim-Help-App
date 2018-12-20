@@ -15,7 +15,8 @@ Home Screen
 
 Nearby Places
 ![nearby](screenshots/near1.png "nearby places 1")
-![nearby](screenshots/near2.png "nearby places 2")
+<img align="right" width="100" height="100" src="screenshots/near2.png">
+
 
 Insurance Claim
 ![claim](screenshots/claim1.png "claim insurance")
