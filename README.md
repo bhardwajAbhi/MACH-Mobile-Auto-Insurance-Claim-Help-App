@@ -8,6 +8,4 @@ This application also provides the facility to report an incident on the go so i
 
 Following are some screenshots of the application implemented on smartphone side: 
 
-![splash screen](screenshots/splash.png "Splash Screen of the App")
-
-
+<img src="https://user-images.githubusercontent.com/29085766/50291133-b0894300-0493-11e9-8f08-f359b20903be.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291167-d282c580-0493-11e9-9387-3a1d42fbbc90.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291174-d6164c80-0493-11e9-8cb7-764a0d5422a6.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291199-ec240d00-0493-11e9-849f-fe29fdd37c7a.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291285-25f51380-0494-11e9-971c-428bebc4a122.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291297-2d1c2180-0494-11e9-85cc-a7d70e4cc9c4.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291266-18d82480-0494-11e9-9c37-572a768aab91.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291200-ededd080-0493-11e9-883d-105406e19756.png" width="45%"></img> 
