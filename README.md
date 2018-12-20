@@ -7,4 +7,8 @@ This application also provides the facility to report an incident on the go so i
 
 
 Following are some screenshots of the application implemented on smartphone side: 
-![alt splash_screen](screenshots/splash.png "Splash Screen of the App")
+
+![splash screen](screenshots/splash.png "Splash Screen of the App")
+    Splash Screen
+
+
