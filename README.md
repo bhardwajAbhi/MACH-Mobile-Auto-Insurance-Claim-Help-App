@@ -10,23 +10,4 @@ Following are some screenshots of the application implemented on smartphone side
 
 ![splash screen](screenshots/splash.png "Splash Screen of the App")
 
-Home Screen
-![home](screenshots/home.png "Home Screen")
-
-Nearby Places
-![nearby](screenshots/near1.png "nearby places 1")
-<img align="right" width="100" height="100" src="screenshots/near2.png">
-
-
-Insurance Claim
-![claim](screenshots/claim1.png "claim insurance")
-![claim](screenshots/claim2.png "claim insurance")
-
-Accident Detection
-![claim](screenshots/track.png "Accident Detection and Tracking")
-
-User Profile with insurance Details
-![profile](screenshots/profile.png "User Profile")
-
-
 
