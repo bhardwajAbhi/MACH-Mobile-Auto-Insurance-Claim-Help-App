@@ -12,3 +12,7 @@ Following are some screenshots of the application implemented on smartphone side
 <img src="https://user-images.githubusercontent.com/29085766/50291174-d6164c80-0493-11e9-8cb7-764a0d5422a6.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291199-ec240d00-0493-11e9-849f-fe29fdd37c7a.png" width="45%"></img>
 <img src="https://user-images.githubusercontent.com/29085766/50291285-25f51380-0494-11e9-971c-428bebc4a122.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291297-2d1c2180-0494-11e9-85cc-a7d70e4cc9c4.png" width="45%"></img> 
 <img src="https://user-images.githubusercontent.com/29085766/50291266-18d82480-0494-11e9-9c37-572a768aab91.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/29085766/50291200-ededd080-0493-11e9-883d-105406e19756.png" width="45%"></img> 
+
+## Visitors Count
+
+<img align="left" src = "https://profile-counter.glitch.me/MACH-Mobile-Auto-Insurance-Claim-Help-App/count.svg" alt ="Loading">
